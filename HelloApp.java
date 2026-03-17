@@ -1,7 +1,9 @@
 import java.util.*;
-class HelloApp{
-    public static void main()
-    {
-        System.out.println("Hello World");
+class HelloApp {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a name:");
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
     }
 }
