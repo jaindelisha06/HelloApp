@@ -1,14 +1,14 @@
 import java.util.*;
 class HelloApp {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a name:");
-        String name = sc.nextLine(); 
-        if (name.isEmpty()) {
-            System.out.println("Hello World!");
+
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
         } else {
-            System.out.println("Hello, " + name + "!");
+
+            for (int i = 0; i < args.length; i++) {
+                System.out.println("Hello, " + args[i] + "!");
+            }
         }
     }
 }
- 
